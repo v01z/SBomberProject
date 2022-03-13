@@ -5,8 +5,8 @@
 #include <time.h> 
 
 #include <string>
-#include <iostream>
-#include <fstream>
+//#include <iostream> //Ћишн€€ сущность
+//#include <fstream>  //ѕереехало в MyTools.h
 #include <chrono>
 
 
@@ -16,7 +16,8 @@ using namespace std;
 
 namespace MyTools {
 
-    ofstream logOut;
+    //ѕереехал в приватную часть объ€влени€ класса FileLoggerSingleton (где ему и место)
+    //ofstream logOut;
 
     //=============================================================================================
 

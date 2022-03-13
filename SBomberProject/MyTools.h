@@ -2,6 +2,7 @@
 
 #include <stdint.h>
 #include <string>
+#include <fstream>
 
 namespace MyTools {
 
@@ -28,6 +29,7 @@ namespace MyTools {
 
 	//=============================================================================================
 
+    //Пока просто закомментил; при исполнении следующих ДЗ будет удалено
     /*
 	void ClrScr();
 
@@ -62,10 +64,12 @@ namespace MyTools {
         ScreenSingleton() { }
         ScreenSingleton(const ScreenSingleton& root) = delete;
         ScreenSingleton& operator=(const ScreenSingleton&) = delete;
+
     };
 
 	//=============================================================================================
 
+    //Same (see previous comment)
     /*
 	void __fastcall OpenLogFile(const std::string& FN);
 
@@ -99,6 +103,8 @@ namespace MyTools {
         FileLoggerSingleton() {}
         FileLoggerSingleton(const FileLoggerSingleton&) = delete;
         FileLoggerSingleton& operator=(const FileLoggerSingleton&) = delete;
+
+        std::ofstream logOut;
     };
 
 
